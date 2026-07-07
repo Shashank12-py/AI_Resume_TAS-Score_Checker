@@ -1,0 +1,43 @@
+/* ===== Global Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #007bff;
+  --accent-hover: #0056b3;
+  --success: #28a745;
+  --danger: #dc3545;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --border: #e0e0e0;
+  --bg-light: #f5f6fa;
+  --font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-light);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font);
+}
